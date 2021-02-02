@@ -1,9 +1,3 @@
-/**
- * Import point for component modules.
- * @module components
- * @example import { BITApp } from 'components';
- */
-
 export { default as BITApp } from './BITApp/BITApp';
 export { default as BITForm } from './BandsInTownForm/BITForm';
 export { default as BITResults } from './BITResults/BITResults';
