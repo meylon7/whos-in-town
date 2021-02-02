@@ -1,0 +1,96 @@
+.bit-results-event {
+  background-color: #efefef;
+  list-style: none;
+  padding: 1em 0;
+}
+
+.bit-results-event:nth-child(odd) {
+  background-color: #fefefe;
+}
+
+.events-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 25px;
+  width: 100%;
+  justify-content: left;
+
+
+}
+
+.totalEvents {
+  padding-top: 10px;
+}
+
+.event-box {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 275px;
+  margin: 0px 20px 20px 0px;
+  background-color: #fff;
+  border-radius: 5px;
+  filter: drop-shadow(0px 5px 15px rgba(0,0,0,0.15));
+  -webkit-animation: fadein 0.8s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 0.8s; /* Firefox < 16 */
+        -ms-animation: fadein 0.8s; /* Internet Explorer */
+         -o-animation: fadein 0.8s; /* Opera < 12.1 */
+            animation: fadein 0.8s;
+}
+.favorites{
+  position: absolute;
+  right: 20px;
+  top:20px;
+}
+.button-div {
+  position: relative
+}
+
+.fav-button {
+  border: none;
+  height: 40px;
+  width: 120px;
+  font-size: 15px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.fav-button i {
+  position: absolute;
+  left: 70px
+}
+
+.fav-button:active i {
+  animation: item 1s ease-in forwards
+}
+
+@keyframes item {
+  0% {
+      top: 20%;
+      color: #000
+  }
+
+  25% {
+      top: 60%;
+      color: #000
+  }
+
+  50% {
+      top: 100%
+  }
+
+  75% {
+      top: 60%
+  }
+
+  0% {
+      top: 0%
+  }
+}
