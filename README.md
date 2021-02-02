@@ -12,3 +12,4 @@ components:
   
   service:
   1. useLocalStorage - hook of local storage
+  2. Modal - popup window old the favorites
