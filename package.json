@@ -1,37 +1,40 @@
 {
-  "name": "whos-in-town",
-  "version": "1.0.0",
-  "description": "search artiest api",
-  "main": "index.js",
+  "name": "bands-in-town",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@ant-design/icons": "^4.3.0",
-    "antd": "^4.7.2",
-    "axios": "^0.20.0",
-    "bootstrap": "^4.5.3",
-    "hookrouter": "^1.2.3",
-    "lodash": "^4.17.20",
-    "react": "^16.13.1",
-    "react-bootstrap": "^1.4.3",
-    "react-dom": "^16.13.1",
-    "react-html-parser": "^2.0.2",
-    "react-jss": "^10.5.0",
-    "react-scripts": "3.4.3",
-    "styled-components": "^5.2.1"
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "antd": "^4.11.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-icons": "^4.1.0",
+    "react-scripts": "2.1.8"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:docs": "jsdoc src -r -d docs",
+    "now-dev": "react-scripts start",
+    "now-build": "react-scripts build",
     "test": "react-scripts test",
+    "test:coverage": "react-scripts test --coverage",
     "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/meylon7/whos-in-town.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "author": "moshe eylon",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/meylon7/whos-in-town/issues"
-  },
-  "homepage": "https://github.com/meylon7/whos-in-town#readme"
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "jsdoc": "^3.6.2",
+    "redux": "^4.0.1",
+    "redux-mock-store": "^1.5.3",
+    "redux-thunk": "^2.3.0"
+  }
 }
